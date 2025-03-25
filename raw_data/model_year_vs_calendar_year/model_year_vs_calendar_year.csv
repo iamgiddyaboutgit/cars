@@ -1,4 +1,4 @@
-model_year,calendar_year,advertised_inventory,model_year_is_previous_calendar_year,model_year_is_calendar_year,model_year_is_next_calendar_year
+model_year,calendar_time,advertised_inventory,model_year_is_previous_calendar_year,model_year_is_calendar_year,model_year_is_next_calendar_year
 2022,2020.5,0,0,0,0
 2022,2020.9,0,0,0,0
 2022,2022.420572,935.612174,0,1,0
