@@ -1,0 +1,33 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - src/index.qmd
+    - src/about.qmd
+    - src/colors_2.ipynb
+
+website:
+  title: "vehicles"
+  navbar:
+    left:
+      - href: src/index.qmd
+        text: Home
+      - href: src/about.qmd
+        text: About
+      - href: src/colors_2.ipynb
+        text: Colors
+
+format:
+  html:
+    embed-resources: true
+    theme:
+      dark: darkly
+      light: flatly
+    fontsize: 1.1em
+    css: styles.css
+    toc: true
+    execute:
+    echo: false
+
+
+
