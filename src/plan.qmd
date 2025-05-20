@@ -1,0 +1,50 @@
+# Purpose of Study
+
+Economists are interested in consumer preferences in the automotive industry.  Herein, we explore these preferences in Utah County, Utah, United States. in March 2025 for on-highway vehicles.  
+
+**Target Population**: All on-highway, operable vehicles driven in Utah County in March 2025 which were owned or leased by people who could be considered residents of said county for at least part of March 2025.  We exclude vehicles owned or leased by businesses.
+
+**Sampled Population**: All vehicles present at one of the selected locations at one of the selected times with readable and verifiable license plates.
+
+# Research Questions 
+
+1. What is the medioid vehicle color of cars in the target population?
+2. What is the distribution of vehicle model years in the target population?
+3. What is the distribution of vehicle model ages in the target population?
+4. How frequent are different vehicle makes in the target population?
+5. How frequent are different vehicle body styles in the target population?
+6. How frequent are electric vehicles in the target population?
+
+# Data Collection
+
+Vehicles will be sampled from the following locations:
+
+1. Walmart Neighborhood Market: 1707 W State St, Pleasant Grove, UT 84062 
+2. Smith's: 210 E 700 S, Pleasant Grove, UT 84062 
+3. Walmart Supercenter: 585 N State St, Lindon, UT 84042 
+4. Best Buy: 309 E University Pkwy, Orem, UT 84058 
+5. Trader Joe's: 440 E Pk Ave, Orem, UT 840976 
+
+## Sampling Strategy
+
+Vehicles will be sampled from the parking lots of the above locations during March 2025 at times when people would normally visit these businesses.  We will discard units with unreadable license plates or with license plates that cannot be verified on clearvin.com.  We will also only include one observation for vehicles seen more than once.
+
+# Variables to Measure
+
+- address (of one of the above stores)	
+- location_name (of one of the above stores)
+- datetime	
+- plate	
+- year	
+- make	
+- model	
+- style_body	
+- engine	
+- color (use [oklch.com](https://oklch.com/))
+
+# Statistical Inference
+
+- Research questions 2-3 will use Utah County vehicle registration data as a prior.
+- Research question 6: According to the [DOE](https://afdc.energy.gov/data/10962), Utah had 39,998 registered all-electric vehicles in the state as of December 31, 2023.  According to [UDOT](https://udot.utah.gov/connect/2023/11/14/udot-to-jumpstart-electric-vehicle-infrastructure-with-new-fast-charging-stations-grants/), "since 2015, the number of EVs in Utah has grown by an average of 48 percent year over year, and the rate of growth is climbing."  Also, according to [Utah vehicle registration data](https://tax.utah.gov/econstats/mv/registrations), there were a total of 12,153 on-highway all-electric vehicle registrations in Utah County with an expiration of January 1, 2025 or greater as of February 17, 2025, a total of 8414 on-highway all-electric vehicle registrations in Utah County with an expiration of January 1, 2024 or greater as of February 15, 2024, and 5601 on-highway all-electric vehicle registrations in Utah County with an expiration of January 1, 2023 or greater as of February 15, 2023.
+
+Because our sampling strategy uses a judgment sample instead of a probability sample, we will run a sensitivity analysis to address selection bias. In doing this, we treat our judgment sample as a census of the target population with some non-response from some population members.
