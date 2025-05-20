@@ -4,24 +4,26 @@ project:
   output-dir: docs
   render:
     - src/plan.qmd
-    - src/colors_2.ipynb
+    - src/colors.ipynb
 
 website:
   sidebar:
     style: "docked"
     contents:
-      - section: "Statistical Analysis Plan"
-        href: src/plan.qmd
+      - section: "Intro"
+        contents:
+          - href: src/plan.qmd
+            text: Statistical Analysis Plan
       - section: "Results"
         contents:
-        - href: src/colors_2.ipynb
+        - href: src/colors.ipynb
           text: Colors
   navbar:
     search: true
     left:
       - href: src/plan.qmd
         text: Statistical Analysis Plan
-      - href: src/colors_2.ipynb
+      - href: src/colors.ipynb
         text: Results
 
 format:
