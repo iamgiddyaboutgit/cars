@@ -1,2 +1,4 @@
 /.quarto/
+/docs/
+/_site/
 raw_data/collected-data
