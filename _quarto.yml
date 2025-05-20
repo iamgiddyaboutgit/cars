@@ -1,21 +1,28 @@
+# https://quarto-tdg.org/yaml.html
 project:
   type: website
   output-dir: docs
   render:
-    - src/index.qmd
-    - src/about.qmd
+    - src/plan.qmd
     - src/colors_2.ipynb
 
 website:
-  title: "vehicles"
+  sidebar:
+    style: "docked"
+    contents:
+      - section: "Statistical Analysis Plan"
+        href: src/plan.qmd
+      - section: "Results"
+        contents:
+        - href: src/colors_2.ipynb
+          text: Colors
   navbar:
+    search: true
     left:
-      - href: src/index.qmd
-        text: Home
-      - href: src/about.qmd
-        text: About
+      - href: src/plan.qmd
+        text: Statistical Analysis Plan
       - href: src/colors_2.ipynb
-        text: Colors
+        text: Results
 
 format:
   html:
