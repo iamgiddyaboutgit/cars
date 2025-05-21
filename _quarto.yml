@@ -5,6 +5,7 @@ project:
   render:
     - src/plan.qmd
     - src/colors.ipynb
+    - src/model_years.ipynb
 
 website:
   sidebar:
@@ -18,6 +19,8 @@ website:
         contents:
         - href: src/colors.ipynb
           text: Colors
+        - href: src/model_years.ipynb
+          text: Ages
   navbar:
     search: true
     left:
