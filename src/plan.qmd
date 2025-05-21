@@ -1,6 +1,6 @@
 # Purpose of Study
 
-Economists are interested in consumer preferences in the automotive industry.  Herein, we explore these preferences in Utah County, Utah, United States. in March 2025 for on-highway vehicles.  
+Economists are interested in consumer preferences in the automotive industry.  Herein, we explore these preferences in Utah County, Utah, United States in March 2025 for on-highway vehicles.  
 
 **Target Population**: All on-highway, operable vehicles driven in Utah County in March 2025 which were owned or leased by people who could be considered residents of said county for at least part of March 2025.  We exclude vehicles owned or leased by businesses.
 
