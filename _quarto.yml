@@ -35,7 +35,6 @@ format:
     fontsize: 1.1em
     css: styles.css
     toc: true
-    execute:
     echo: false
 
 
