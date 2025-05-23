@@ -8,7 +8,7 @@ Economists are interested in consumer preferences in the automotive industry.  H
 
 # Research Questions 
 
-1. What is the medioid vehicle color of cars in the target population?
+1. What is the medioid vehicle color of vehicles in the target population?
 2. What is the distribution of vehicle model years in the target population?
 3. What is the distribution of vehicle model ages in the target population?
 4. How frequent are different vehicle makes in the target population?
