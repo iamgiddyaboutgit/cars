@@ -1,0 +1,50 @@
+# https://quarto-tdg.org/yaml.html
+project:
+  type: website
+  output-dir: docs
+  render:
+    - src/plan.qmd
+    - src/colors.ipynb
+    - src/model_years.ipynb
+
+website:
+  sidebar:
+    style: "docked"
+    contents:
+      - section: "Intro"
+        contents:
+          - href: src/plan.qmd
+            text: Statistical Analysis Plan
+      - section: "Results"
+        contents:
+        - href: src/colors.ipynb
+          text: Colors
+        - href: src/model_years.ipynb
+          text: Ages
+  navbar:
+    tools:
+      - icon: github
+        menu:
+          - text: Source Code
+            href: https://github.com/iamgiddyaboutgit/cars
+    search: true
+    left:
+      - href: src/plan.qmd
+        text: Statistical Analysis Plan
+      - href: src/colors.ipynb
+        text: Results
+
+format:
+  html:
+    embed-resources: true
+    theme:
+      dark: darkly
+      light: flatly
+    fontsize: 1.1em
+    css: styles.css
+    toc: true
+    echo: false
+    code-overflow: wrap
+
+
+
