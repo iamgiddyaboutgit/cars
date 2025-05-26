@@ -1,14 +1,62 @@
 [
   {
-    "objectID": "src/colors.html",
-    "href": "src/colors.html",
-    "title": "",
+    "objectID": "src/model_years.html",
+    "href": "src/model_years.html",
+    "title": "Research Question: What is the distribution of vehicle model years in the target population?",
     "section": "",
-    "text": "From Figure 1, we can see that the estimated vehicle medioid color is a rather boring grey.\n\n\n\n\n                                                \n\n\nFigure 1: Estimated Vehicle Medioid Color\n\n\n\n\nAs seen in Figure 2, the distribution of colors in the sample conforms to expectations. Colors that do not look good on cars are absent. It is debatable whether or not the colors people pick for their cars are what they prefer or if they are just choosing what is cheap/available for a given model.\n\n\n\n\n                                                \n\n\nFigure 2: Vehicle Colors in Sample. Each vehicle color is plotted in OKLAB color space.\n\n\n\n\nCaveats: No attempts are made to account for non-sampling errors such as non-response and measurement errors–or to correct for sampling error. Measurement errors are likely due to the highly reflective nature of most car paints. The vehicle colors in the target population may differ. However, based on personal experience observing vehicles in the target population outside of this study, the author does not expect the color distribution to be dramatically different in the target population.",
+    "text": "Note that we include vehicles that are driven in Utah County without being registered in Utah County. Thus, we provide added information to what is publicly available from government registration records. That being said, we place a strong prior on the government registration data, so our results closely track the government registration records. Notice the dips in 2009 and 2020 in Figure 1.\nFigure 1: Vehicle Model Years as of March 2025.\nFigure 2: Vehicle Model Ages as of March 2025.",
     "crumbs": [
       "Statistical Analysis Plan",
       "Results",
-      "Colors"
+      "Ages"
+    ]
+  },
+  {
+    "objectID": "src/model_years.html#strategy",
+    "href": "src/model_years.html#strategy",
+    "title": "Research Question: What is the distribution of vehicle model years in the target population?",
+    "section": "Strategy",
+    "text": "Strategy\nUse the registration counts as the concentration parameters for a Dirichlet distribution. Use the technique here to use these concentration parameters as pseudocounts to be added to our observed counts. The summed counts can then be used as the concentration parameter for the posterior Dirichlet distribution of the relative frequencies of different vehicle model years in the population.\nresponse variable: vector of means (proportion for each model year)\nposterior parameter(s): concentration vector for Dirichlet distribution",
+    "crumbs": [
+      "Statistical Analysis Plan",
+      "Results",
+      "Ages"
+    ]
+  },
+  {
+    "objectID": "src/model_years.html#transform-registration-counts-based-on-prior-beliefs",
+    "href": "src/model_years.html#transform-registration-counts-based-on-prior-beliefs",
+    "title": "Research Question: What is the distribution of vehicle model years in the target population?",
+    "section": "Transform Registration Counts based on Prior Beliefs",
+    "text": "Transform Registration Counts based on Prior Beliefs\n\nExtrapolate the registration counts for pre-1913 model year vehicles\nThe first steam-powered vehicle dates back to 1672 (Wikipedia). The Utah registration data starts for model year 1913. We assume that the number of vehicle registrations is 0 for model years not listed in the government data. Also, we assume that the model year of a vehicle must be an integer between 1672 and 2026.\n\n\nExtrapolate the registration counts for post-2023 model year vehicles\nNew vehicles are still being sold for 2024, 2025, and 2026 model years, but not for model year 2023. The registration data that we have is for vehicles registered in 2024 all of the way up to February 17, 2025. Thus, there may be additional registrations for the newer model year vehicles between February 2025 and March 2025 which are not in our dataset. We can modify the registration counts for these new model years using the count for model year 2023. Use linear interpolation to get extrapolated (March 2025) counts for model years 2024-2026 based on the count for model year 2023.",
+    "crumbs": [
+      "Statistical Analysis Plan",
+      "Results",
+      "Ages"
+    ]
+  },
+  {
+    "objectID": "src/model_years.html#non-business-registrations",
+    "href": "src/model_years.html#non-business-registrations",
+    "title": "Research Question: What is the distribution of vehicle model years in the target population?",
+    "section": "Non-business Registrations",
+    "text": "Non-business Registrations\nUse a distribution of Richard’s curves to model the non-business registrations in the government data. For the pre-2005 model years, most were probably registered by actual individuals instead of businesses. For model years post 2005-ish, a good chunk of the registrations are likely for commercial vehicles.",
+    "crumbs": [
+      "Statistical Analysis Plan",
+      "Results",
+      "Ages"
+    ]
+  },
+  {
+    "objectID": "src/model_years.html#dirichlet",
+    "href": "src/model_years.html#dirichlet",
+    "title": "Research Question: What is the distribution of vehicle model years in the target population?",
+    "section": "Dirichlet",
+    "text": "Dirichlet\nAssume that the proportion of vehicles in the population for each model year follows a Dirichlet distribution whose parameters are a function of the registration counts. The total number of on-highway vehicle registrations (all-vehicle types including motorcycles and heavy trucks) in Utah County, Utah, United States with an expiration of January 1, 2025 or greater as of February 17, 2025 was 584221.\nThe 1 July, 2024 estimate of the number of residents of Utah County, Utah is 747,234. The five-year 2019-2023 ACS estimate of the number of households in Utah County is 195,602. According to DataUSA, the number of vehicles per household in Utah is about 2. This would put a lower bound on the target population size of about 195602 * 2 = 391204. Note that vehicles can be registered by businesses and not just households and not all vehicles in the target population are in government registration records.",
+    "crumbs": [
+      "Statistical Analysis Plan",
+      "Results",
+      "Ages"
     ]
   },
   {
@@ -33,6 +81,18 @@
       "Statistical Analysis Plan",
       "Intro",
       "Statistical Analysis Plan"
+    ]
+  },
+  {
+    "objectID": "src/colors.html",
+    "href": "src/colors.html",
+    "title": "",
+    "section": "",
+    "text": "From Figure 1, we can see that the estimated vehicle medioid color is a rather boring grey.\n\n\n\n\n                                                \n\n\nFigure 1: Estimated Vehicle Medioid Color\n\n\n\n\nAs seen in Figure 2, the distribution of colors in the sample conforms to expectations. Colors that do not look good on cars are absent. It is debatable whether or not the colors people pick for their cars are what they prefer or if they are just choosing what is cheap/available for a given model.\n\n\n\n\n                                                \n\n\nFigure 2: Vehicle Colors in Sample. Each vehicle color is plotted in OKLAB color space.\n\n\n\n\nCaveats: No attempts are made to account for non-sampling errors such as non-response and measurement errors–or to correct for sampling error. Measurement errors are likely due to the highly reflective nature of most car paints. The vehicle colors in the target population may differ. However, based on personal experience observing vehicles in the target population outside of this study, the author does not expect the color distribution to be dramatically different in the target population.",
+    "crumbs": [
+      "Statistical Analysis Plan",
+      "Results",
+      "Colors"
     ]
   }
 ]

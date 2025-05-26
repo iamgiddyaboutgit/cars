@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://iamgiddyaboutgit.github.io/cars/src/colors.html</loc>
-    <lastmod>2025-05-21T01:58:07.526Z</lastmod>
+    <loc>https://iamgiddyaboutgit.github.io/cars/src/model_years.html</loc>
+    <lastmod>2025-05-26T02:12:50.259Z</lastmod>
   </url>
   <url>
     <loc>https://iamgiddyaboutgit.github.io/cars/src/plan.html</loc>
-    <lastmod>2025-05-21T01:55:51.854Z</lastmod>
+    <lastmod>2025-05-26T02:12:50.259Z</lastmod>
+  </url>
+  <url>
+    <loc>https://iamgiddyaboutgit.github.io/cars/src/colors.html</loc>
+    <lastmod>2025-05-26T02:12:50.248Z</lastmod>
   </url>
 </urlset>
