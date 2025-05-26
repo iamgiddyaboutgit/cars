@@ -22,6 +22,11 @@ website:
         - href: src/model_years.ipynb
           text: Ages
   navbar:
+    tools:
+      - icon: github
+        menu:
+          - text: Source Code
+            href: https://github.com/iamgiddyaboutgit/cars
     search: true
     left:
       - href: src/plan.qmd
