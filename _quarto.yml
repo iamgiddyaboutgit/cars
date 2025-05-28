@@ -10,6 +10,7 @@ project:
     - src/body_styles.ipynb
 
 website:
+  bread-crumbs: false
   page-navigation: true
   back-to-top-navigation: true
   sidebar:
