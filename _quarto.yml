@@ -7,8 +7,10 @@ project:
     - src/colors.ipynb
     - src/model_years.ipynb
     - src/makes.ipynb
+    - src/body_styles.ipynb
 
 website:
+  bread-crumbs: false
   page-navigation: true
   back-to-top-navigation: true
   sidebar:
@@ -26,6 +28,8 @@ website:
           text: Ages
         - href: src/makes.ipynb
           text: Makes
+        - href: src/body_styles.ipynb
+          text: Vehicle Body Styles
   navbar:
     tools:
       - icon: github
