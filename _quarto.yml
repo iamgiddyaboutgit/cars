@@ -8,11 +8,12 @@ project:
     - src/model_years.ipynb
     - src/makes.ipynb
     - src/body_styles.ipynb
+    - src/electric.ipynb
 
 website:
   bread-crumbs: false
   page-navigation: true
-  back-to-top-navigation: true
+  back-to-top-navigation: false
   sidebar:
     style: "docked"
     contents:
@@ -30,6 +31,8 @@ website:
           text: Makes
         - href: src/body_styles.ipynb
           text: Vehicle Body Styles
+        - href: src/electric.ipynb
+          text: Electric Vehicles
   navbar:
     tools:
       - icon: github
