@@ -13,7 +13,7 @@ project:
 website:
   bread-crumbs: false
   page-navigation: true
-  back-to-top-navigation: true
+  back-to-top-navigation: false
   sidebar:
     style: "docked"
     contents:
