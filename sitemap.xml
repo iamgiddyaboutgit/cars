@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://iamgiddyaboutgit.github.io/cars/src/electric.html</loc>
+    <lastmod>2025-05-29T04:23:42.852Z</lastmod>
+  </url>
+  <url>
     <loc>https://iamgiddyaboutgit.github.io/cars/src/makes.html</loc>
-    <lastmod>2025-05-27T16:48:17.510Z</lastmod>
+    <lastmod>2025-05-29T04:23:42.855Z</lastmod>
   </url>
   <url>
     <loc>https://iamgiddyaboutgit.github.io/cars/src/colors.html</loc>
-    <lastmod>2025-05-27T16:47:01.341Z</lastmod>
+    <lastmod>2025-05-29T04:23:42.852Z</lastmod>
   </url>
   <url>
     <loc>https://iamgiddyaboutgit.github.io/cars/src/plan.html</loc>
@@ -14,6 +18,10 @@
   </url>
   <url>
     <loc>https://iamgiddyaboutgit.github.io/cars/src/model_years.html</loc>
-    <lastmod>2025-05-27T16:48:03.558Z</lastmod>
+    <lastmod>2025-05-29T04:23:42.871Z</lastmod>
+  </url>
+  <url>
+    <loc>https://iamgiddyaboutgit.github.io/cars/src/body_styles.html</loc>
+    <lastmod>2025-05-29T04:23:42.851Z</lastmod>
   </url>
 </urlset>
